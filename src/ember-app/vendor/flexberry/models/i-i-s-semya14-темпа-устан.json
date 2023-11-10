@@ -1,0 +1,75 @@
+﻿{
+  "name": "IISSemya14ТемпаУстан",
+  "modelName": "i-i-s-semya14-темпа-устан",
+  "className": "ТемпаУстан",
+  "nameSpace": "IIS.Semya14",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "температура",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТемпаУстанE",
+      "modelName": "i-i-s-semya14-темпа-устан",
+      "attrs": [
+        {
+          "name": "температура",
+          "caption": "Температура",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ТемпаУстанL",
+      "modelName": "i-i-s-semya14-темпа-устан",
+      "attrs": [
+        {
+          "name": "температура",
+          "caption": "Температура",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

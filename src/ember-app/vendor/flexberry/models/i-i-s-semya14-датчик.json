@@ -1,0 +1,104 @@
+﻿{
+  "name": "IISSemya14Датчик",
+  "modelName": "i-i-s-semya14-датчик",
+  "className": "Датчик",
+  "nameSpace": "IIS.Semya14",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "номерД",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "погрешность",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "производ",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "контроллер",
+      "relatedTo": "i-i-s-semya14-контроллер",
+      "inverse": "датчик"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ДатчикE",
+      "modelName": "i-i-s-semya14-датчик",
+      "attrs": [
+        {
+          "name": "номерД",
+          "caption": "Номер Д",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "погрешность",
+          "caption": "Погрешность",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "производ",
+          "caption": "Производ",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ДатчикL",
+      "modelName": "i-i-s-semya14-датчик",
+      "attrs": [
+        {
+          "name": "номерД",
+          "caption": "",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "погрешность",
+          "caption": "",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "производ",
+          "caption": "",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

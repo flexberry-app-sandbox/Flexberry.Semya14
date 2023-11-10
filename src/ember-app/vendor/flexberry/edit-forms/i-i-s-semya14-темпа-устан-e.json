@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Темпа устан",
+  "name": "IISSemya14ТемпаУстанE",
+  "className": "ТемпаУстанE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-semya14-темпа-устан",
+      "modelProjection": "ТемпаУстанE"
+    }
+  ]
+}

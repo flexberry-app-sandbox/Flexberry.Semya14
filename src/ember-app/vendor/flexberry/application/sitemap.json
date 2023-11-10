@@ -1,0 +1,29 @@
+﻿{
+  "applicationCaption": "Semya14",
+  "applicationTitle": "Semya14",
+  "items": [
+    {
+      "link": null,
+      "menuName": "semya14",
+      "caption": "Semya14",
+      "title": "Semya14",
+      "children": [
+        {
+          "link": "i-i-s-semya14-темпа-устан-l",
+          "menuName": null,
+          "caption": "Темпа устан",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-semya14-контроллер-l",
+          "menuName": null,
+          "caption": "Контроллер",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

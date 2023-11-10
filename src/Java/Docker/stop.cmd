@@ -1,0 +1,1 @@
+docker-compose -p semya14-java down

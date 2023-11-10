@@ -1,0 +1,149 @@
+﻿{
+  "name": "IISSemya14Контроллер",
+  "modelName": "i-i-s-semya14-контроллер",
+  "className": "Контроллер",
+  "nameSpace": "IIS.Semya14",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "номер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "состояние",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "темпаУстан",
+      "relatedTo": "i-i-s-semya14-темпа-устан",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "датчик",
+      "relatedTo": "i-i-s-semya14-датчик",
+      "inverse": "контроллер"
+    }
+  ],
+  "projections": [
+    {
+      "name": "КонтроллерE",
+      "modelName": "i-i-s-semya14-контроллер",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "состояние",
+          "caption": "Состояние",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Температура",
+          "lookupValueField": "температура",
+          "relationName": "ТемпаУстан",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "температура",
+              "caption": "Температура",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Темпа устан",
+          "name": "темпаУстан",
+          "relatedTo": "i-i-s-semya14-темпа-устан",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "ДатчикE",
+          "caption": "Датчик",
+          "name": "датчик",
+          "relatedTo": "i-i-s-semya14-датчик",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "КонтроллерL",
+      "modelName": "i-i-s-semya14-контроллер",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "состояние",
+          "caption": "Состояние",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ТемпаУстан",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "температура",
+              "caption": "Температура",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "default",
+          "caption": "",
+          "name": "темпаУстан",
+          "relatedTo": "i-i-s-semya14-темпа-устан",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "ДатчикL",
+          "caption": "",
+          "name": "датчик",
+          "relatedTo": "i-i-s-semya14-датчик",
+          "inverse": null
+        }
+      ]
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

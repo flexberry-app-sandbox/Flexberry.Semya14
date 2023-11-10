@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ТемпаУстан",
+      "projection": "ТемпаУстанL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Контроллер",
+  "name": "IISSemya14КонтроллерE",
+  "className": "КонтроллерE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-semya14-контроллер",
+      "modelProjection": "КонтроллерE"
+    }
+  ]
+}
